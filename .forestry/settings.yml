@@ -7,17 +7,17 @@ sections:
 - type: heading
   label: Content
 - type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
   path: content/post
   label: Post
   create: documents
   match: "**/*"
   templates:
   - post
-- type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
 - type: directory
   path: content/homepage
   label: Homepage
